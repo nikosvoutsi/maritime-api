@@ -9,7 +9,7 @@ class FinancialReportController extends Controller
 {
     public function getReport($vesselId)
     {
-        // Use SQL queries to retrieve the required data
+        // SQL queries to retrieve the required data
         $report = DB::table('voyages')
     ->select(
         'voyages.id as voyage_id',
